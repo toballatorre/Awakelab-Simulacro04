@@ -15,23 +15,23 @@
 			crossorigin="anonymous">
 </head>
     <body>
-    	<header class="container-fluid text-center">
-    		<h1 class="h1">Simulacion 04</h1>
-    	</header>
+    	<section class="row">
+	    		<h1 class="h1 text-center col">Simulacion 04</h1>
+    		</section>
 
 		<!-- Navegación -->
-		<section class="row">
-			<ul class="nav nav-pills col-6 m-auto">
-				<li class="nav-item"><a class="nav-link active"
-					href="${pageContext.request.contextPath}">Home</a></li>
-				<li class="nav-item"><a class="nav-link"
-					href="${pageContext.request.contextPath}/listado">Listado de
-						Reservas</a></li>
-				<li class="nav-item"><a class="nav-link"
-					href="${pageContext.request.contextPath}/reserva">Reserva de
-						horas Médicas</a></li>
-			</ul>
-		</section>
+		<section class="row justify-content-center">
+				<ul class="nav nav-pills justify-content-center">
+					<li class="nav-item"><a class="nav-link active"
+						href="${pageContext.request.contextPath}">Home</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="${pageContext.request.contextPath}/listado">Listado de
+							Reservas</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="${pageContext.request.contextPath}/reserva">Reserva de
+							horas Médicas</a></li>
+				</ul>
+			</section>
 		<!-- BOOTSTRAP JAVASCRIPT -->
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

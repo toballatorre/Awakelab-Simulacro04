@@ -13,14 +13,18 @@
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
 			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
 			crossorigin="anonymous">
+		
+		<!-- FONTAWESOME -->
+		<script src="https://kit.fontawesome.com/99da01f7d9.js" crossorigin="anonymous"></script>
 </head>
     <body>
     	<header class="container-fluid">
-    		<h1 class="h1  text-center row">Simulacion 04</h1>
-    		
+    		<section class="row">
+	    		<h1 class="h1 text-center col">Simulacion 04</h1>
+    		</section>
     		<!-- Navegación -->
-			<section class="row">
-				<ul class="nav nav-pills col-6 m-auto">
+    		<section class="row justify-content-center">
+				<ul class="nav nav-pills justify-content-center">
 					<li class="nav-item"><a class="nav-link"
 						href="${pageContext.request.contextPath}">Home</a></li>
 					<li class="nav-item"><a class="nav-link"
@@ -30,10 +34,68 @@
 						href="${pageContext.request.contextPath}/reserva">Reserva de
 							horas Médicas</a></li>
 				</ul>
-			</section>
+			</section>			
     	</header>
 	<main class="container">
-    	</main>
+		<section class="row justify-content-center mt-3">
+			<form class="col-6" action="">
+				<div class="form-group row">
+					<label for="nombre"  class="col-sm-4 col-form-label">Nombre Paciente</label>
+					<div class="col-sm-6">
+						<input type="text" class="form-control" id="nombre">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="apellido"  class="col-sm-4 col-form-label">Nombre Apellido</label>
+					<div class="col-sm-6">
+						<input type="text" class="form-control" id="apellido">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="rutPaciente"  class="col-sm-4 col-form-label">Rut Paciente</label>
+					<div class="col-sm-6">
+						<input type="text" class="form-control" id="rutPaciente">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="especialidad"  class="col-sm-4 col-form-label">Especialidad</label>
+					<div class="col-sm-6">
+						<select for="especialidad" class="form-control">
+							<option></option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="doctor"  class="col-sm-4 col-form-label">Doctor(a)</label>
+					<div class="col-sm-6">
+						<select for="doctor" class="form-control">
+							<option></option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="fecha"  class="col-sm-4 col-form-label">Fecha</label>
+					<div class="col-sm-5">
+						<input type="text" class="form-control" id="fecha" readonly="readonly">
+					</div>
+					<div class="col-sm-1">
+						<span style="color: Dodgerblue;">
+							<i class="far fa-calendar-alt fa-2x"></i>
+						</span>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="hora"  class="col-sm-4 col-form-label">Hora</label>
+					<div class="col-sm-6">
+						<input type="time" class="form-control" id="hora">
+					</div>
+					<div class="col-sm-1">
+						
+					</div>
+				</div>
+			</form>
+		</section>
+    </main>
 		<!-- BOOTSTRAP JAVASCRIPT -->
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

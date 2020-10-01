@@ -17,12 +17,12 @@
 </head>
     <body>
     	<header class="container-fluid">
-    	
-	    		<h1 class="h1 text-center">Simulacion 04</h1>
-
-			<!-- Navegación -->
-			<section class="row">
-				<ul class="nav nav-pills col-6 m-auto">
+    		<section class="row">
+	    		<h1 class="h1 text-center col">Simulacion 04</h1>
+    		</section>
+    		<!-- Navegación -->
+    		<section class="row justify-content-center">
+				<ul class="nav nav-pills justify-content-center">
 					<li class="nav-item"><a class="nav-link"
 						href="${pageContext.request.contextPath}">Home</a></li>
 					<li class="nav-item"><a class="nav-link active"
@@ -32,8 +32,8 @@
 						href="${pageContext.request.contextPath}/reserva">Reserva de
 							horas Médicas</a></li>
 				</ul>
-			</section>
-	</header>
+			</section>			
+    	</header>
     	<main class="container">
     		<!-- Listado de las Agendas -->
 			<section class="row">
